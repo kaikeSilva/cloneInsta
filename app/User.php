@@ -6,6 +6,10 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
+//adicionar suporte para email
+use Illuminate\Support\Facades\Mail;
+use App\Mail\NewUserWelcomeMail;
+
 class User extends Authenticatable
 {
     use Notifiable;
@@ -63,7 +67,7 @@ class User extends Authenticatable
             //basta colocar um usuário e uma senha no arquivo para completar a configuração
             //'mailabels', 'markdown' -- procurar depois
             //criar um email pelo terminal: php artisan make:mail NewUserWelcomeMail -m emai.welcome-email
-
+            Mail::to($user->email)->send(new NewUserWelcomeMail());
 
 
         });
