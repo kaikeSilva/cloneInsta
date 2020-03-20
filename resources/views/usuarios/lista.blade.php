@@ -14,7 +14,7 @@
                     pt-2 pb-2 pl-4 pr-4">
             <div class="">
                 <a href="/profile/{{ $user->profile->id }}">
-                    <img src="{{ $user->profile->profileImage() }}" height="70px" class="" alt="">
+                    <img src="{{ $user->profile->profileImage() }}" height="70px" class="rounded-circle" alt="">
                 </a>
             </div>
 
