@@ -17,6 +17,7 @@
         <div class="col-9">
             <!-- passar dados para view através da sintaxe mustashe, variavel definida em controller pode ser acessada diretamente -->
             <div class="d-flex justify-content-between align-items-baseline">
+                
                 <div class="d-flex align-items-center">
                     <div class="h3">{{ $user -> username }}</div>
                     <follow-button follows="{{ $follows }}" userid="{{ $user -> id }}" id="example"/>

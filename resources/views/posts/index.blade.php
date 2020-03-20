@@ -2,6 +2,11 @@
 
 @section('content')
 <div class="container">
+        <div class="row justify-content-center">
+            <div class="h1">
+                linha do tempo
+            </div>
+        </div>
     @foreach($posts as $post)
         <div class="row box-shadow">
             <div class="col-6 offset-3">
@@ -22,7 +27,6 @@
                         {{ $post->caption }}
                     </p>
                 </div>
-
             </div>
         </div>
     @endforeach

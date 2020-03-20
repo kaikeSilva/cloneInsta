@@ -22,6 +22,13 @@ use Illuminate\Support\Facades\Cache;
 
 class ProfilesController extends Controller
 {
+        //controle de autenticação
+    //criar construtor da controller que verifica authenticação
+    public function __construct () 
+    {
+        //se não houver autenticação é mandado para a página de login
+        $this->middleware('auth');
+    }
 
     //retornar a view com os dados do usuário que foi passada na url
     //findOrFail desvia para a pagina 404 se não encontrar

@@ -19,27 +19,28 @@ use App\Mail\NewUserWelcomeMail;
 
 Auth::routes();
 
-
 /*
     ROTA PARA VISUALIZAR O EMAIL
 */
 Route::get('/email', function() {
     return new NewUserWelcomeMail();
 });
+/*
+    ROTA PARA LISTA DE USUÁRIOS
+*/
+//rota https para colocar seguidores no perfil
+Route::get('/usuarios','UsuariosController@index');
 
 /*
     ROTAS PARA AXIOS VINDAS DO FRONT EM REACT
 */
-
-
 //rota https para colocar seguidores no perfil
 Route::post('/follow/{user}','FollowsController@store');
+
 
 /*
     ROTAS PARA PROFILES
 */
-
-
 
 //rota https para mostrar determinada página na tela com os argumentos entre {}
 //Padrao restfull para action SHOW
