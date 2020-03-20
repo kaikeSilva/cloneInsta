@@ -1,7 +1,7 @@
-<<<<<<< HEAD
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
-## About Laravel
+## Clone Instagran
 <p align="left">
     Este projeto foi feito com o laravel e implementa um clone do instagran.</br>
     Possui:</br>
@@ -11,5 +11,3 @@
 </p>
 
 =======
-# cloneInsta
->>>>>>> 08d6379029a6fe8fa0721e8fc1693440229622fc
